@@ -8,7 +8,7 @@ function getDollar(number){
            document.getElementById("dollar").innerHTML = dollar;
        };
 
-function BuyFarm(number){
+function buyFarm(number){
            farm = farm + number;
            document.getElementById("farm").innerHTML = farm;
        };
