@@ -3,7 +3,7 @@ var dollars = 0;
 var farms = 0;
 var farmCost = 1000;
 
-function GetDollar(number){
+function getDollar(number){
     dollars = dollars + number;
     document.getElementById("dollars").innerHTML = dollars;
 };
