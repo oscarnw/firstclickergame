@@ -15,3 +15,7 @@ function buyFarm(){
         document.getElementById('farms').innerHTML = farms;
         document.getElementById('dollars').innerHTML = dollars;
 };
+    
+    window.setInterval(function(){
+
+}, 1000);
