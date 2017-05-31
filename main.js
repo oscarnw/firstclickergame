@@ -3,11 +3,20 @@
 var dollar = 0
 var farm = 0
 var farmCost = 1000
+var save = {
+           dollar: dollar,
+           farm: farm,
+           prestige: prestige:
+}
 
+function save(){
+           localStorage.setItem("save",JSON.stringify(save));
+}
 
-
-
-
+function prettify(input){
+    var output = Math.round(input * 1000000)/1000000;
+	return output;
+}
 
 function getDollar(number){
            dollar = dollar + number;
