@@ -1,6 +1,7 @@
 
 var dollars = 0;
 var farms = 0;
+var farmCost = 1000;
 
 function GetDollar(number){
     dollars = dollars + number;
@@ -8,8 +9,7 @@ function GetDollar(number){
 };
 
 function buyFarm(){
-    var farmCost = 1000;
-    if(dollars >= farmCost){                               
+        if(dollars >= farmCost){                               
         farms = farms + 1;                                 
     	dollars = dollars - farmCost;                         
         document.getElementById('farms').innerHTML = farms;
