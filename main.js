@@ -6,7 +6,7 @@ var farmCost = 1000
 var save = {
            dollar: dollar,
            farm: farm,
-           prestige: prestige:
+           farmCost: farmCost:
 }
 
 function save(){
