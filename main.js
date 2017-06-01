@@ -1,4 +1,5 @@
 
+
 var dollar = 0
 var farm = 0
 var farmCost = 0
@@ -83,5 +84,8 @@ window.setInterval(function(){
 	
 	getDollar(50 * farm * Math.pow(1.01,tractor) );
 
-	
+	if(Math.random()<=detector*0.01){
+    gold = gold + 1
+	  document.getElementById("gold").innerHTML = gold
+	};
 }, 1000);
