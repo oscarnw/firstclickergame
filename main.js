@@ -2,32 +2,32 @@
 
 var dollar = 0
 var farm = 0
-var farmCost = 1000
-var save = {
-           dollar: dollar,
-           farm: farm,
-           farmCost: farmCost:
-}
 
-function save(){
-           localStorage.setItem("save",JSON.stringify(save));
-}
 
-function prettify(input){
-    var output = Math.round(input * 1000000)/1000000;
-	return output;
-}
 
 function getDollar(number){
            dollar = dollar + number;
            document.getElementById("dollar").innerHTML = dollar;
        };
 
-function buyFarm(){
+function buyFarm(number){
+        
+    var farmCost =  Math.floor(1000 * Math.pow(1.1,farm));
+    
+    
            if(dollar >= farmCost){
-                      farms = farms + 1;
+                      farm = farm + number;
                       dollar = dollar - farmCost
+                               var farmCost =  Math.floor(1000 * Math.pow(1.1,farm));             
                       document.getElementById("dollar").innerHTML = dollar;
                       document.getElementById("farm").innerHTML = farm;
+                      document.getElementById("farmCost").innerHTML = farmCost;
            };
        };
+
+
+window.setInterval(function(){
+	
+	getDollar(50 * farm);
+	
+}, 1000);
