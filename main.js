@@ -72,20 +72,20 @@ function buyTractor(number){
    
    function sellGold(number){
        if(gold >= 1){
-	dollar = dollar + 1000*number;
-	gold = gold - number
-	document.getElementById("dollar").innerHTML = dollar;
-	document.getElementById("gold").innerHTML = gold;
+  dollar = dollar + 1000*number;
+  gold = gold - number
+  document.getElementById("dollar").innerHTML = dollar;
+  document.getElementById("gold").innerHTML = gold;
        }
    }
    
    
 window.setInterval(function(){
-	
-	getDollar(50 * farm * Math.pow(1.01,tractor) );
+  
+  getDollar(50 * farm * Math.pow(1.01,tractor) );
 
-	if(Math.random()<=detector*0.01){
+  if(Math.random()<=detector*0.01){
     gold = gold + 1
-	  document.getElementById("gold").innerHTML = gold
-	};
+    document.getElementById("gold").innerHTML = gold
+  };
 }, 1000);
