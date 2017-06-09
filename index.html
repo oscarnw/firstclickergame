@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
   <title>Amena Aethel  -  Idle</title>
-<!-- Latest compiled and minified CSS -->
+<!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
+<!-- Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +20,7 @@
 
 <div class="page-header" >
  <div class="well">
+ 	<!--In the big grey box at the page top -->
  	<h1>Kingdom of Dhufuik Coindelver</h1>
 
  	<p><i>This is a rather small, grassy region in the vast world of Amena Aethel. It is ruled over by
@@ -35,10 +33,11 @@
   
 </div>
 
+
 <div class="row">
 
   <div class="col-sm-4">
-  	
+  	<!--First Column -->
  <h1><p><u><i>Grasslands</i></u></p></h1>
    <hr align="left" width="100%">
 
@@ -50,18 +49,45 @@
 
 
 	 	 <div class="btn-group">
-	 	 <button onclick="getDollar(100)" class="btn btn-success btn-lg">Get $100</button> 
-	 	 <button onclick="getDollar(200)" class="btn btn-success btn-lg">Get $200</button> 
-	 	   <button onclick="getDollar(300)" class="btn btn-success btn-lg">Get $300</button> 
-	 	</div>
- 
-
-
-	 	 <p></p>
+	 	 <button onclick="ploughField(1)" class="btn btn-success btn-lg">Plough Field</button> 
+	 	 <button onclick="plantCrops(1)" class="btn btn-success btn-lg">Plant Crops</button> 
+	 	 <button onclick="harvestCrops(1)" class="btn btn-success btn-lg">Harvest Crops</button> 
+	 	  	 	</div>
+ <br>
+ <br>
+ <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/QoLuROH.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <br>
+ <br>
+  <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/QoLuROH.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <br>
+ <br>
+  <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/QoLuROH.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <br>
+ <br>
+  <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/QoLuROH.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <br>
+ <br>
+  <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/QoLuROH.png" style="width:100px;height:100px;">
+ <img src="http://i.imgur.com/7KMOQqX.png" style="width:100px;height:100px;">
+	 	 <br>
 	 		 	 <hr align="left" width="100%">
 	 		 	 
-	 		 	 <p></p>
-	 	 <p class="bg-warning"> Earnings per second: $<span id="earnpersec">0</span></p>
+	 		 	 	 	   </div>
+
+  <div class="col-sm-4">
+  	<!--Second Column -->
+ <h1><p><u><i>Trade Market</i></u></p></h1>
+   
+<p class="bg-warning"> Earnings per second: $<span id="earnpersec">0</span></p>
 <p></p>
 	 		 	 <hr align="left" width="100%">
 	 		 	
@@ -92,7 +118,7 @@
 	<p> <i>Each metal detector increases your chance of </p>
 	<p>finding a gold nugget each second by 1%</i></p>
 	 <p> <i>Only 5 metal detectors are available for purchase</i></p>
-	 	  <p>  Metal Detector Cost: $<span id="detectorCost">1000</span> </p>
+	  <p>  Metal Detector Cost: $<span id="detectorCost">1000</span> </p>
 	     <p> Metal Detectors Owned: <span id="detector">0</span> / 5
 	 	 </p>
 	  <p></p>
@@ -105,15 +131,7 @@
 
 
   </div>
-
-  <div class="col-sm-4">
-  	
- <h1><p><u><i>Next Location</i></u></p></h1>
-   
-
-
-  </div>
-
+	<!--Third Column -->
   <div class="col-sm-4">
   	
  <h1><p><u><i>Next Location</i></u></p></h1>
@@ -133,8 +151,10 @@
  
 	 		
 	 		 	  </div>
-
-	  	  	  <script type="text/javascript" src="main.js"></script>
+					<!-- Jquery JavaScript -->
+	  	  	  	  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  	  	  	  	 <!-- Main JavaScript for the Game -->
+	  	  	  	  	 <script type="text/javascript" src="main.js"></script>
 	  	
 	    </body>
 	    

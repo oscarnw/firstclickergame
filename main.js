@@ -1,5 +1,3 @@
-
-
 var dollar = 0
 var farm = 0
 var farmCost = 0
@@ -49,11 +47,15 @@ function buyTractor(number){
           var earnpersec = earnpersec = 50 * farm * Math.pow(1.01,tractor)
            document.getElementById("earnpersec").innerHTML = Math.round(earnpersec);
        };
-        
+
+
    
    function buyDetector(number){
         
     var detectorCost =  Math.floor(1000 * Math.pow(1.1,detector));
+
+
+
     
     if(detector < 5){
            if(dollar >= detectorCost){
@@ -72,20 +74,20 @@ function buyTractor(number){
    
    function sellGold(number){
        if(gold >= 1){
-  dollar = dollar + 1000*number;
-  gold = gold - number
-  document.getElementById("dollar").innerHTML = dollar;
-  document.getElementById("gold").innerHTML = gold;
+	dollar = dollar + 1000*number;
+	gold = gold - number
+	document.getElementById("dollar").innerHTML = dollar;
+	document.getElementById("gold").innerHTML = gold;
        }
    }
    
    
 window.setInterval(function(){
-  
-  getDollar(50 * farm * Math.pow(1.01,tractor) );
+	
+	getDollar(50 * farm * Math.pow(1.01,tractor) );
 
-  if(Math.random()<=detector*0.01){
+	if(Math.random()<=detector*0.01){
     gold = gold + 1
-    document.getElementById("gold").innerHTML = gold
-  };
+	  document.getElementById("gold").innerHTML = gold
+	};
 }, 1000);
