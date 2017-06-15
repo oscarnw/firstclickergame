@@ -1,35 +1,51 @@
+apple = 0
+watermelon = 0
+magicBean = 0
+appleGrowing = 0
+watermelonGrowing = 0
 
+ function getAppleSeed(number) {
 
+apple = apple + number
 
+ document.getElementById("apple").innerHTML = apple;
 
+}
 
-window.setInterval(function(){
-  
-  // Functions to happen every 0.015 seconds
+ function getWatermelonSeed(number) {
 
-  
-  };
-}, 15);
-   
-window.setInterval(function(){
-	
-  // Functions to happen every 0.1 seconds
-	
- 
+watermelon = watermelon + number
 
-	};
-}, 100);
+ document.getElementById("watermelon").innerHTML = watermelon;
 
-window.setInterval(function(){
-  
-  // Functions to happen every 1 second
+}
 
-  };
-}, 1000);
+ function getMagicBean(number) {
 
-window.setInterval(function(){
-  
-  // Functions to happen every 10 seconds
+magicBean = magicBean + number
 
-  };
-}, 10000);
+ document.getElementById("magicBean").innerHTML = magicBean;
+
+}
+
+function plantAppleSeed(number) { 
+
+	if(apple>0) {
+	appleGrowing = appleGrowing + number
+	apple = apple - number
+
+	document.getElementById("apple").innerHTML = apple;
+	document.getElementById("appleGrowing").innerHTML = appleGrowing;
+	}
+}
+
+function plantWatermelon(number) { 
+
+	if(watermelon>0) {
+	watermelonGrowing = watermelonGrowing + number
+	watermelon = watermelon - number
+
+	document.getElementById("watermelon").innerHTML = watermelon;
+	document.getElementById("watermelonGrowing").innerHTML = watermelonGrowing;
+	}
+}
