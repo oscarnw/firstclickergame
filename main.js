@@ -109,5 +109,5 @@ window.setInterval(function(){
 
 window.setInterval(function(){
     growAppleTree()
-  
+
 }, 12000);
