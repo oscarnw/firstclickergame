@@ -101,13 +101,3 @@ window.setInterval(function(){
     growAppleTree()
 
 }, 3000);
-
-window.setInterval(function(){
-    growAppleTree()
-
-}, 6000);
-
-window.setInterval(function(){
-    growAppleTree()
-
-}, 12000);
