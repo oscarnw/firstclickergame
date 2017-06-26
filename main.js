@@ -1,6 +1,6 @@
 var money = 0;
 
-function moneyClick(){
+function getCoin(){
     money ++
 		    document.getElementById("goblinBankAccount").innerHTML = money;
 };
