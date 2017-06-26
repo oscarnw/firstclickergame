@@ -1,49 +1,42 @@
-  
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amena Aethel</title>
 
-	<title>Amena Aethel</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Jquery JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!-- Jquery JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
 
-	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-	<style>
-
-		body {
-    background-image: url("https://wallpaperscraft.com/image/mountains_sky_reflection_grass_lake_river_93232_1920x1200.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
+body {
+  background-image: url("https://wallpaperscraft.com/image/mountains_sky_reflection_grass_lake_river_93232_1920x1200.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
 
 
-    	.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
-        color: black;
-        background-color: #ff8f4f;
+  	.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+      color: black;
+      background-color: #ff8f4f;
     	}
 
-        .nav-pills > li.active > a:hover {
-            background-color: #e88045;
-            color:black;
-        }
+    .nav-pills > li.active > a:hover {
+       background-color: #e88045;
+       color:black;
+       }
 
 
-        .well {
+    .well {
    background-color: rgba(245, 245, 245, 0.9);
    border-radius: 0px;
 	}
@@ -53,62 +46,69 @@
    border-radius: 0px;
 	}
 
-		td {
-			text-align: center;
-			vertical-align: middle;
-	}
-
-	</style>
-	<script src="main.js"></script>
+</style>
 
 </head>
 
-<body>
+<body>  
 
-	<div class="container-fluid">
-		<br>
-		<br>
-		<div class="well">
-				<!--In the big grey box at the page top -->
- 				<h1>Kingdom of Dhufuik Coindelver</h1>
+<div class="container-fluid">
 
- 				<p><i>This is a rather small, grassy region in the vast world of Amena Aethel. It is ruled over by
- 				Dhufuik Coindelver, an aged dwarven king who has an obsession with gold.</i>
- 				<br>
-					<br>
-					<strong>Travel within the kingdom:</strong>
-					<ul class="nav nav-pills nav-justified" role="tablist">
-    				<li class="active"><a href="#">Faerie Meadow</a></li>
-    				<li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
-    				<li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
-    				<li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
-    				<li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
-    				<li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
-    				<li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>        
-  				</ul>
-			  
-		</div>
+  <div class="well">
+ 	  <!--In the big grey box at the page top -->
+ 	  <h1>Kingdom of Dhufuik Coindelver</h1>
 
-		<div class="well">
-            Goblin Bank Account: $<span id="spanGoblinBankAccount">0</span>
-			<br>
-			<button class="btn btn-lg btn-success" id="buttonGetDollar">Get Dollar</button>
-		</div>
-
-
-
-
-
-
-
-
+ 	  <p><i>This is a rather small, grassy region in the vast world of Amena Aethel. It is ruled over by
+ 	  Dhufuik Coindelver, an aged dwarven king who has an obsession with gold.</i>
+ 	  <br>
+    <br>
+ 	  <strong>Travel within the kingdom:</strong>
+ 	  <ul class="nav nav-pills nav-justified" role="tablist">
+    <li class="active"><a href="#">Faerie Meadow</a></li>
+    <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
+    <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
+    <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
+    <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
+    <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
+    <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>        
+    </ul>	  
 	</div>
 
-  		
 
-	<!-- Main JavaScript for the Game -->
-	<script type="text/javascript" src="main.js"></script>
-</body>
-	    
-	   
+  <div class="well">
+  <p><i>Search your land for coins!</i></p>
+  <button class="btn btn-success btn-lg" onclick="moneyClick()">Get Coin</button> 
+  <p></p>
+  <p><i>Bank Account:</i></p>
+  <p>Goblin Bank Account - $<span id="goblinBankAccount">0</span></p>
+  </div>
+
+  <div class="well">
+  <p><i>Get your seeds here!</i></p>
+  <button class="btn btn-success btn-lg">Apple</button> 
+  <button class="btn btn-success btn-lg">Mango</button> 
+  <button class="btn btn-success btn-lg">Poison Root</button> 
+  <button class="btn btn-success btn-lg">Magic Bean</button> 
+  <p></p>
+  <p><i>Seeds owned in storage:</i></p>
+  <p>Apple - <span id="appleSeed">0</span> | Mango - <span id=mangoSeed>0</span> | Poison Root - <span id=poisonRoot>0</span> | Magic Bean - <span id=magicBean>0</span></p>
+  </div>
+
+  <div class="well">
+  <p><i>Plant seeds and grow plants!</i></p>
+  <button class="btn btn-success btn-lg">Apple</button> 
+  <button class="btn btn-success btn-lg">Mango</button> 
+  <button class="btn btn-success btn-lg">Poison Root</button> 
+  <button class="btn btn-success btn-lg">Magic Bean</button> 
+  <p></p>
+  <p><i>Seeds planted in soil:</i></p>
+  <p>Apple - <span id="appleSeed">0</span> | Mango - <span id=mangoSeed>0</span> | Poison Root - <span id=poisonRoot>0</span> | Magic Bean - <span id=magicBean>0</span></p>
+  </div>
+
+</div>
+
+<!-- Main JavaScript for the Game -->
+<script type="text/javascript" src="main.js"></script>
+
+</body>   
 </html>
