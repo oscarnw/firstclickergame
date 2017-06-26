@@ -1,6 +1,6 @@
-let dollar =0
+var money = 0;
 
-document.getElementById("buttonGetDollar").addEventListener("click", function(){
-    dollar ++
-    document.getElementById("spanGoblinBankAccount").innerHTML = dollar
-});
+function moneyClick(){
+    money ++
+		    document.getElementById("goblinBankAccount").innerHTML = money;
+};
