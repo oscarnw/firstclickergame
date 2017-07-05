@@ -109,22 +109,33 @@ body {
     </div>
   </div>
 
-
-
-
-
   <div class="well">
   <p><i>Plant seeds and grow plants!</i></p>
-  <button class="btn btn-success btn-lg">Apple</button> 
-  <button class="btn btn-success btn-lg">Mango</button> 
-  <button class="btn btn-success btn-lg">Poison Root</button> 
-  <button class="btn btn-success btn-lg">Magic Bean</button> 
+  <button class="btn btn-success btn-lg" onclick="plantAppleSeed()">Apple</button>
+  <button class="btn btn-success btn-lg" onclick="plantMangoSeed()">Mango</button>
+  <button class="btn btn-success btn-lg" onclick="plantPoisonRootSeed()">Poison Root</button>
+  <button class="btn btn-success btn-lg" onclick="plantMagicBeanSeed()">Magic Bean</button>
   <p></p>
   <p><i>Seeds planted in soil:</i></p>
-  <p>Apple - <span id="appleSeed">0</span> | Mango - <span id=mangoSeed>0</span> | Poison Root - <span id=poisonRoot>0</span> | Magic Bean - <span id=magicBean>0</span></p>
+  <p>Apple - <span id="appleSeedPlanted">0</span> | Mango - <span id=mangoSeedPlanted>0</span> |
+    Poison Root - <span id=poisonRootPlanted>0</span> | Magic Bean - <span id=magicBeanPlanted>0</span></p>
   </div>
 
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="well">
+        <body onload="start()">
+        <canvas id="canvas" width="250px" height="250px"></canvas>
+        </body>
+      </div>
     </div>
+    <div class="col-sm-6">
+      <div class="well">
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 
