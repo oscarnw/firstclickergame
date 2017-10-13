@@ -5,34 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Amena Aethel</title>
-
-<!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css"> 
-
-
-<!-- Jquery JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<!-- Soundjs JavaScript -->
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-
-<!-- Google Font CDN -->
 <link href="https://fonts.googleapis.com/css?family=source+sans+pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" rel="stylesheet">
-  
-
-
-
-<!-- Font Awesome (icons) CDN -->
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" rel="stylesheet">
 <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
-
 <style>
-
-
-
-
 body {
   background-image: url("https://wallpaperscraft.com/image/jungle_fantasy_deer_butterflies_night_trees_102121_1920x1200.jpg");
   background-repeat: no-repeat;
@@ -55,7 +34,6 @@ body {
        color:black;
        }
 
-
 .well {
    background-color: rgba(245, 245, 245, 0.9);
    border-radius: 0px;
@@ -66,34 +44,21 @@ body {
    border-radius: 0px;
    }
 
-
 .btn {
   border-radius: 0px;
 }
-
 </style>
-
 </head>
 
 <body>
-
-
-
-
-<div class="container">
-
-
-
-<br>
-  <br>
-  <div class="well">
- 	  <h1 style="text-align: center; color: brown; font-family: IM Fell DW Pica, serif; font-weight: bold;">Kingdom of David Coindelver</h1>
- 	  <p><i>This is a rather small, grassy region in the vast world of Amena Aethel. It is ruled over by
- 	  David Coindelver, an aged dwarven king with an obsession with gold.</i>
- 	  <br>
+<div class="well">
+    <h1 style="text-align: center; color: brown; font-family: IM Fell DW Pica, serif; font-weight: bold;">Kingdom of David Coindelver</h1>
+    <p><i>This is a rather small, grassy region in the vast world of Amena Aethel. It is ruled over by
+    David Coindelver, an aged dwarven king with an obsession with gold.</i>
     <br>
- 	  <strong>Travel within the kingdom:</strong>
- 	  <ul class="nav nav-pills nav-justified" role="tablist">
+    <br>
+    <strong>Travel within the kingdom:</strong>
+    <ul class="nav nav-pills nav-justified" role="tablist">
     <li class="active"><a href="#">Faerie Meadow</a></li>
     <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
     <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
@@ -102,33 +67,27 @@ body {
     <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
     <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>        
     </ul>	  
-	</div>
+</div>
 
-       <div class="well">
-        <p><i>Search your land for coins!</i></p>
-        <button class="btn btn-success btn-lg" onclick="getCoin()">Get Coin <i class="fa fa-circle fa-lg"></i></button>
-        <p></p>
-        <p><i>Bank Account:</i></p>
-        <p>Goblin Bank Account - $<span id="goblinBankAccount">0</span></p>
-      </div>
+<div class="well">
+    <p><i>Search your land for coins!</i></p>
+    <button class="btn btn-success btn-lg" onclick="getCoin()">Get Coin <i class="fa fa-circle fa-lg"></i></button>
+    <br>
+    <p><i>Bank Account:</i></p>
+    <p>Goblin Bank Account - $<span id="goblinBankAccount">0</span></p>
+</div>
   
-
-  <div class="well">
-  <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non lorem nec turpis
-	  gravida tincidunt ac eu elit. Quisque eu arcu tincidunt, sodales tellus et, vehicula mauris.
-	  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-	  Praesent ut imperdiet velit. Morbi porta eu velit vitae faucibus. Nullam scelerisque blandit vehicula.
-	  Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ultrices at
-	  tortor at venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tincidunt dictum
-	  aliquet. Nam luctus urna mauris, et consequat ligula vulputate vel. Suspendisse faucibus, neque sed tincidunt
-	  vulputate, nisi velit tincidunt orci, nec pretium nunc arcu in magna. Curabitur quis consectetur ex.</i></p>
+<div class="well">
+    <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non lorem nec turpis
+    gravida tincidunt ac eu elit. Quisque eu arcu tincidunt, sodales tellus et, vehicula mauris.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    Praesent ut imperdiet velit. Morbi porta eu velit vitae faucibus. Nullam scelerisque blandit vehicula.
+    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ultrices at
+    tortor at venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tincidunt dictum
+    aliquet. Nam luctus urna mauris, et consequat ligula vulputate vel. Suspendisse faucibus, neque sed tincidunt
+    vulputate, nisi velit tincidunt orci, nec pretium nunc arcu in magna. Curabitur quis consectetur ex.</i></p>
   </div>
 
- 
-</div>
-	    
-<!-- Main JavaScript for the Game -->
 <script type="text/javascript" src="main.js"></script>
-
 </body>   
 </html>
