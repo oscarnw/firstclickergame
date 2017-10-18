@@ -95,22 +95,7 @@ body {
   margin: 50px;
   }
   
- .wrapper {
-  display: grid;
-  padding: 20px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  }
-
-.box {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 20px;
-  font-size: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+ 
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
       color: black;
@@ -139,10 +124,12 @@ body {
 </head>
 
 <body>
-<div class="wrapper">
+
   
-<div class="box a">
-    <h1 style="text-align: center; color: brown; font-family: IM Fell DW Pica, serif; font-weight: bold;">Kingdom of David Coindelver</h1>
+ 
+  <div class="wrapper">
+  <header class="header">
+        <h1 style="text-align: center; color: brown; font-family: IM Fell DW Pica, serif; font-weight: bold;">Kingdom of David Coindelver</h1>
     <p><i>This is a rather small, grassy region in the vast world of Amena Aethel. It is ruled over by
     David Coindelver, an aged dwarven king with an obsession with gold.</i>
     <br>
@@ -157,65 +144,19 @@ body {
     <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>
     <li><a href="#"><p class="text-muted">Locked <span class="glyphicon 	glyphicon glyphicon-lock"></span></p></a></li>        
     </ul>
-</div>
-  
-<div class="box b">
-  <p><i>Search your land for coins!</i></p>
+    </header>
+  <aside class="sidebar">Sidebar</aside>
+  <article class="content">
+     <p><i>Search your land for coins!</i></p>
     <button class="btn btn-success btn-lg" onclick="getCoin()">Get Coin <i class="fa fa-circle fa-lg"></i></button>
     <br>
     <p>Goblin Bank Account - $<span id="goblinBankAccount">0</span></p>
-</div>
   
-<div class="box c">
-   <p><i>Buy a Magiberry Plant</i></p>
+  <p><i>Buy a Magiberry Plant</i></p>
    <button class="btn btn-success btn-lg" onclick="getCoin()">Buy</button>
    <p>Number owned - $<span id="numberMagiberry">0</span></p>
    <p>Production Each - $<span id="productionEachMagiberry">0</span></p>
    <p>Production Total - $<span id="productionTotalMagiberry">0</span></p>
-
-</div>
-
-<div class="box d">
-   <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non lorem nec turpis
-    gravida tincidunt ac eu elit. Quisque eu arcu tincidunt, sodales tellus et, vehicula mauris.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    Praesent ut imperdiet velit. Morbi porta eu velit vitae faucibus. Nullam scelerisque blandit vehicula.
-    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ultrices at
-    tortor at venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tincidunt dictum
-    aliquet. Nam luctus urna mauris, et consequat ligula vulputate vel. Suspendisse faucibus, neque sed tincidunt
-    vulputate, nisi velit tincidunt orci, nec pretium nunc arcu in magna. Curabitur quis consectetur ex.</i></p>
-</div>
-  
-<div class="box e">
-   <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non lorem nec turpis
-    gravida tincidunt ac eu elit. Quisque eu arcu tincidunt, sodales tellus et, vehicula mauris.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    Praesent ut imperdiet velit. Morbi porta eu velit vitae faucibus. Nullam scelerisque blandit vehicula.
-    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ultrices at
-    tortor at venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tincidunt dictum
-    aliquet. Nam luctus urna mauris, et consequat ligula vulputate vel. Suspendisse faucibus, neque sed tincidunt
-    vulputate, nisi velit tincidunt orci, nec pretium nunc arcu in magna. Curabitur quis consectetur ex.</i></p>
-</div>
-  
-<div class="box f">
-   <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non lorem nec turpis
-    gravida tincidunt ac eu elit. Quisque eu arcu tincidunt, sodales tellus et, vehicula mauris.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    Praesent ut imperdiet velit. Morbi porta eu velit vitae faucibus. Nullam scelerisque blandit vehicula.
-    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ultrices at
-    tortor at venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tincidunt dictum
-    aliquet. Nam luctus urna mauris, et consequat ligula vulputate vel. Suspendisse faucibus, neque sed tincidunt
-    vulputate, nisi velit tincidunt orci, nec pretium nunc arcu in magna. Curabitur quis consectetur ex.</i></p>
-</div>
-  
-</div>
-  
-  <div class="wrapper">
-  <header class="header">My header</header>
-  <aside class="sidebar">Sidebar</aside>
-  <article class="content">
-    <h1>2 column, header and footer</h1>
-    <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
   </article>
   <footer class="footer">My footer</footer>
 </div>
